@@ -4,11 +4,11 @@ A minimal custom CSS theme for Miniflux.
 
 ## Preview
 
-![Theme preview](./Screenshot.png)
+![Theme preview](./assets/Screenshot.png)
 
 ## Usage
 
-1. Open `miniflux-typography-light-theme.css`.
+1. Open `css/miniflux-typography-light-theme.css`.
 2. Copy its content.
 3. In Miniflux, open **Settings** -> **Display Settings** -> **Custom CSS** (or custom stylesheet field), then paste and save.
 
