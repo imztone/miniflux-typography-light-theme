@@ -297,11 +297,6 @@ a {
     display: none !important;
 }
 
-.header li:has(> a[href$="/subscribe"]),
-.header li:has(> a[href*="/subscribe?"]) {
-    display: none !important;
-}
-
 .header :is(a, summary):hover,
 .header :is(a, summary):focus-visible {
     background: #e8eef6;
