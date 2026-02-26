@@ -475,8 +475,7 @@ main {
     font-size: 0.88rem;
 }
 
-.item-meta a,
-.item-meta-icons li> :is(a, button) {
+.item-meta a {
     color: #56677a;
 }
 
@@ -488,15 +487,40 @@ main {
     display: none !important;
 }
 
-/* Hide feed icons */
-:is(.feed-icon,
-    .feed-logo,
-    img.feed-icon,
+.item-title a :is(img.feed-icon, img.feed-logo, img.favicon, img[src*="/feed/icon/"], img[src*="favicon"], img[src*="/icon/"]) {
+    display: inline-block !important;
+    width: 1.08em;
+    height: 1.08em;
+    margin-right: 0.42em;
+    border-radius: 50%;
+    border: 1px solid #b7c4d6;
+    box-shadow:
+        0 1px 2px rgb(28 44 66 / 18%),
+        0 2px 6px rgb(28 44 66 / 16%);
+    object-fit: cover;
+    vertical-align: -0.14em;
+    background: #edf3fa;
+}
+
+.item-title a:hover :is(img.feed-icon, img.feed-logo, img.favicon, img[src*="/feed/icon/"], img[src*="favicon"], img[src*="/icon/"]),
+.item-title a:focus-visible :is(img.feed-icon, img.feed-logo, img.favicon, img[src*="/feed/icon/"], img[src*="favicon"], img[src*="/icon/"]) {
+    box-shadow:
+        0 1px 2px rgb(25 40 61 / 20%),
+        0 3px 8px rgb(25 40 61 / 20%);
+}
+
+.item-meta .category,
+.item .category {
+    display: none !important;
+}
+
+/* Keep entry metadata clean */
+.entry-meta :is(img.feed-icon,
+    img.feed-logo,
     img.favicon,
-    .item-title img[src*="/icon"],
-    .item-meta img[src*="/icon"],
-    .entry-meta img[src*="/icon"],
-    img[src*="favicon"]) {
+    img[src*="/feed/icon/"],
+    img[src*="favicon"],
+    img[src*="/icon/"]) {
     display: none !important;
 }
 
