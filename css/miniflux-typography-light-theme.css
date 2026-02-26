@@ -1,4 +1,7 @@
 :root {
+    /* List favicon toggle: `inline-block` to show, `none` to hide */
+    --mf-item-favicon-display: inline-block;
+
     /* Font system */
     --mf-font-ui: "OPPO Sans 4.0", "Sarasa Mono SC", "PingFang SC", "Source Han Sans SC", "Noto Sans CJK SC", "Microsoft YaHei", "Helvetica Neue", Arial, system-ui, sans-serif;
     --mf-font-reading: "OPPO Sans 4.0", "Sarasa Mono SC", "Source Han Serif SC", "Noto Serif CJK SC", "PingFang SC", Georgia, "Times New Roman", serif;
@@ -488,7 +491,7 @@ main {
 }
 
 .item-title a :is(img.feed-icon, img.feed-logo, img.favicon, img[src*="/feed/icon/"], img[src*="favicon"], img[src*="/icon/"]) {
-    display: inline-block !important;
+    display: var(--mf-item-favicon-display) !important;
     width: 1.08em;
     height: 1.08em;
     margin-right: 0.42em;

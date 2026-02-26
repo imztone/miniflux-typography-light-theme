@@ -12,6 +12,12 @@ A minimal custom CSS theme for Miniflux.
 2. Copy its content.
 3. In Miniflux, open **Settings** -> **Display Settings** -> **Custom CSS** (or custom stylesheet field), then paste and save.
 
+## Customization
+
+Toggle list favicons with `--mf-item-favicon-display` in `:root`:
+- `inline-block` to show
+- `none` to hide
+
 ## Design Reference
 
 This CSS is inspired by:  
